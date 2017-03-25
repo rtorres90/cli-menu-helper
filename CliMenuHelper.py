@@ -11,11 +11,31 @@ class CliMenuHelper(object):
         self.max_space = max([len(option) for option in self.options])
         self.head = self.frame_pattern * (self.max_space + (self.padding_space * 2) + 5)
         self.line_wrapper = self.create_line_wrapper()
+        self.exit_line = self.line_wrapper.replace("#toreplace#", "Press %s to exit." % self.quit_option)
 
     def start(self):
+        self.cls()
+        self.create_complete_menu()
+        option_selected = raw_input("Select the option: ")
+        if option_selected == self.quit_option:
+            print "Bye."
+            return None
+        try:
+            option_selected = int(option_selected)
+            if option_selected <= len(self.options):
+                return option_selected
+        except ValueError:
+            pass
+        print "The selected option does not exist."
+        raw_input()
+        self.start()
+
+
+    def create_complete_menu(self):
         print self.head
         print self.create_menu_title()
         print self.create_options_panel()
+        print self.exit_line
         print self.head
 
     def create_menu_title(self):
@@ -29,3 +49,8 @@ class CliMenuHelper(object):
 
     def create_line_wrapper(self):
         return "{0}{1}#toreplace#{1}{2}".format(self.frame_pattern, self.padding_blank_space, self.frame_pattern)
+
+    def cls(self):
+        import os
+        os.system('cls')
+        os.system('clear')
