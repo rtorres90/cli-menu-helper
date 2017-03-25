@@ -34,6 +34,7 @@ class CliMenuHelper(object):
     def create_complete_menu(self):
         print self.head
         print self.create_menu_title()
+        print self.head
         print self.create_options_panel()
         print self.exit_line
         print self.head
@@ -48,7 +49,7 @@ class CliMenuHelper(object):
         return "\n".join(response)
 
     def create_line_wrapper(self):
-        return "{0}{1}#toreplace#{1}{2}".format(self.frame_pattern, self.padding_blank_space, self.frame_pattern)
+        return "{0}{1}#toreplace#{1}{0}".format(self.frame_pattern, self.padding_blank_space)
 
     def cls(self):
         import os
