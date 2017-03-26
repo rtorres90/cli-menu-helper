@@ -1,1 +1,1 @@
-include CliMenuHelper.py
+include cli-menu-helper/CliMenuHelper.py
