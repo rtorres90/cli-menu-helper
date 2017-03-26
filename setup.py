@@ -7,7 +7,7 @@ setup(
   author = 'Roberto Torres',
   author_email = 'roberto.torres.dev@gmail.com',
   url = 'https://github.com/rtorres90/cli-menu-helper/',
-  download_url = 'https://github.com/rtorres90/cli-menu-helper/archive/0.1.tar.gz',
+  download_url = 'https://github.com/rtorres90/cli-menu-helper/archive/v0.2.1.tar.gz',
   keywords = ['menu', 'cli'],
   classifiers = [],
 )
