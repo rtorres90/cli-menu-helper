@@ -23,3 +23,10 @@ Possible outputs:
  - If you select a listed option, CliMenuHelper will return the option that you selected.
  - If you do not select a listed option, the menu will reload.
  - If you select the option to exit, CliMenuHelper will return None
+
+How to install.
+---------------
+
+```
+pip install CliMenuHelper
+```
