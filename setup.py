@@ -1,13 +1,13 @@
-from distutils.core import setup
 setup(
-  name = 'cli-menu-helper',
-  packages = ['cli-menu-helper'],
-  version = '0.1',
+  name = 'CliMenuHelper',
+  packages = ['CliMenuHelper'],
+  version = '0.2',
   description = 'Library to create cli menus',
+  long_description=long_description,
   author = 'Roberto Torres',
   author_email = 'roberto.torres.dev@gmail.com',
   url = 'https://github.com/rtorres90/cli-menu-helper/',
-  download_url = 'https://github.com/rtorres90/cli-menu-helper/archive/v0.3.tar.gz',
+  download_url = 'https://github.com/rtorres90/cli-menu-helper/archive/v0.4.tar.gz',
   keywords = ['menu', 'cli'],
-  classifiers = [],
+  classifiers = ['Programming Language :: Python :: 2.7'],
 )
