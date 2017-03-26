@@ -1,7 +1,7 @@
 CliMenuHelper.
 ==============
 
-CliMenuHelper is a tool to help you in the creation cli menu with options.
+CliMenuHelper is a tool to help in the creation of cli menus.
 
 Example:
 ```python
