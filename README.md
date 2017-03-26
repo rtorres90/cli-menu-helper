@@ -1,4 +1,6 @@
-#CliMenuHelper.
+CliMenuHelper.
+==============
+
 CliMenuHelper is a tool to help you in the creation cli menu with options.
 
 Example:
@@ -21,4 +23,3 @@ Possible outputs:
  - If you select a listed option, CliMenuHelper will return the option that you selected.
  - If you do not select a listed option, the menu will reload.
  - If you select the option to exit, CliMenuHelper will return None
- 
